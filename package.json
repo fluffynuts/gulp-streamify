@@ -1,0 +1,29 @@
+{
+  "name": "gulp-streamify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/gulp": "^4.0.17",
+    "@types/jest": "^29.5.12",
+    "@types/through2": "^2.0.41",
+    "expect-even-more-jest": "^1.18.0",
+    "filesystem-sandbox": "^1.24.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "plugin-error": "^2.0.1",
+    "through2": "^4.0.2",
+    "vinyl": "^3.0.0"
+  }
+}
