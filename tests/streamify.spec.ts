@@ -17,6 +17,7 @@ describe(`streamify-async-function`, () => {
   async function foo(opts: FooOpts): Promise<void> {
     captured.opts = opts;
   }
+
   function foo_sync(opts: FooOpts): void {
     captured.opts = opts;
   }
