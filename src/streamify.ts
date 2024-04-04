@@ -1,7 +1,7 @@
 import { Transform } from "stream";
 import * as vinyl from "vinyl";
 
-const lead = require("lead");
+const sink = require("lead");
 
 const through = require("through2");
 const PluginError = require("plugin-error");
@@ -22,7 +22,7 @@ export function streamify_original<T>(
   pluginName: string,
   operation: string
 ): Transform {
-  return lead(
+  return sink(
     through.obj(async function (
       this: Transform,
       file: vinyl.BufferFile,
@@ -68,7 +68,7 @@ export function streamify_perdocs<T>(
     callback(error, output);
   };
 
-  return lead(transformStream);
+  return sink(transformStream);
 }
 
 export function streamify_perdocs_sync<T>(
@@ -94,5 +94,5 @@ export function streamify_perdocs_sync<T>(
     callback(error, output);
   };
 
-  return lead(transformStream);
+  return sink(transformStream);
 }
